@@ -1,0 +1,895 @@
+/*
+  ==========================================================================
+ General Information
+ ==========================================================================
+Website Url : http://www.keith-amoah.webspace.virginmedia.com/
+Description : template css for E-Learning Aid Wi-Fi, WiMAX and LTE site
+Version : 2
+Author : Keith Amoah
+Date : 30/01/2014
+
+ 
+ ==========================================================================
+ Color Guide
+ ========================================================================== 
+ 
+  ==========================================================================
+ 
+  
+ ==========================================================================
+ Table of Content
+ ========================================================================== 
+1. Generic
+2. Page header
+3. Navigation
+	a. Login / Register
+	b. Search Form
+	c. Main Navigation
+		1.Top Level Navigation
+		2.Sub Level Navigation
+4. Main Content
+5. Sidebar / Adverts
+6.Page Footer
+ ========================================================================== */
+/*
+========================================================================== 
+1.Generic
+========================================================================== 
+*/
+/* line 52, ../scss/templateV7.scss */
+body {
+  font-size: 80%;
+  text-align: left;
+  line-height: 1.25;
+  font-family: Verdana, Georgia;
+}
+
+/* line 61, ../scss/templateV7.scss */
+.clearthis {
+  margin: 0px;
+  height: 1px;
+  clear: both;
+  float: none;
+  font-size: 1px;
+  line-height: 0px;
+  overflow: hidden;
+}
+
+/* line 73, ../scss/templateV7.scss */
+.fa {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 79, ../scss/templateV7.scss */
+.left {
+  float: left;
+}
+
+/* line 81, ../scss/templateV7.scss */
+.right {
+  float: right;
+}
+
+/* line 84, ../scss/templateV7.scss */
+#wrapper {
+  height: 100%;
+  border-color: #9e9ec3;
+  border-width: 0px 1px 1px;
+  border-style: solid;
+  background-color: #FFFFCC;
+}
+
+/* line 94, ../scss/templateV7.scss */
+#pageHeader, #pageFooter {
+  background: url("/imgs/wifi-wimax-lte/header_background.gif") repeat-x 0px 0px;
+  background: #69C;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 731px) {
+  /* line 106, ../scss/templateV7.scss */
+  #wrapper {
+    margin: 0 20px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* line 110, ../scss/templateV7.scss */
+  body {
+    font-size: 90%;
+  }
+}
+/*
+========================================================================== 
+2.Page Header
+========================================================================== 
+*/
+/* line 118, ../scss/templateV7.scss */
+#siteName {
+  display: inline-block;
+}
+
+/* line 121, ../scss/templateV7.scss */
+#siteName h1 {
+  font-size: 200%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 128, ../scss/templateV7.scss */
+#site a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 731px) {
+  /* line 133, ../scss/templateV7.scss */
+  #siteName h1 {
+    margin-bottom: 0;
+  }
+}
+/*
+========================================================================== 
+3. Navigation
+========================================================================== 
+*/
+/* line 143, ../scss/templateV7.scss */
+nav {
+  clear: both;
+}
+
+/* line 150, ../scss/templateV7.scss */
+#bar {
+  background: #999;
+  padding: 5px;
+}
+
+/* line 156, ../scss/templateV7.scss */
+.navButton {
+  display: none;
+}
+
+/* line 159, ../scss/templateV7.scss */
+.navButton h2 {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 110%;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 168, ../scss/templateV7.scss */
+nav a {
+  text-decoration: none;
+}
+
+/* Remove underline from all anchors*/
+@media only screen and (max-width: 730px) {
+  /* line 172, ../scss/templateV7.scss */
+  .navButton {
+    display: table;
+    padding: 0;
+    background-color: #CCC;
+    border: solid 3px #DDD;
+    border-right: solid 3px #888;
+    border-bottom: solid 3px #888;
+    min-width: 80px;
+  }
+  /* line 182, ../scss/templateV7.scss */
+  .navButton:hover {
+    background: #333;
+    color: #fff;
+  }
+  /* line 187, ../scss/templateV7.scss */
+  .navButton span.fa-bars {
+    display: inline;
+  }
+  /* line 189, ../scss/templateV7.scss */
+  .navButton span.fa-times-circle {
+    display: none;
+  }
+
+  /* line 194, ../scss/templateV7.scss */
+  .navButton.open {
+    font-weight: bold;
+    border: solid 3px #DDD;
+    border-left: solid 3px #888;
+    border-top: solid 3px #888;
+    /*color:#0FF;*/
+  }
+
+  /* line 203, ../scss/templateV7.scss */
+  .navButton.open span.fa-bars {
+    display: none;
+  }
+
+  /* line 205, ../scss/templateV7.scss */
+  .navButton.open span.fa-times-circle {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 731px) {
+  /* line 212, ../scss/templateV7.scss */
+  #bar {
+    display: none;
+  }
+}
+/*
+========================================================================== 
+3a. Login / Register
+========================================================================== 
+*/
+/*
+========================================================================== 
+3b. Search Form
+========================================================================== 
+*/
+/*
+========================================================================== 
+3c. Main Navigation
+========================================================================== 
+*/
+/* line 236, ../scss/templateV7.scss */
+nav ul {
+  /*Remove list-style from all nav unordered lists*/
+  list-style: none;
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  padding-left: 0;
+  font-size: 110%;
+}
+
+/*
+========================================================================== 
+3c1. Top Level Navigation
+========================================================================== 
+*/
+/* line 251, ../scss/templateV7.scss */
+#topLevel {
+  text-transform: capitalize;
+  position: relative;
+  z-index: 25;
+  width: 100%;
+  display: none;
+}
+
+/* line 259, ../scss/templateV7.scss */
+#topLevel.open {
+  display: block;
+}
+
+/* line 261, ../scss/templateV7.scss */
+#topLevel > li {
+  margin: 5px;
+}
+
+/* line 264, ../scss/templateV7.scss */
+#topLevel li {
+  background-color: transparent;
+  float: left;
+  min-height: 50px;
+  min-width: 70px;
+  padding: 0;
+  display: table;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 275, ../scss/templateV7.scss */
+#topLevel > li > a {
+  color: #000;
+  background: #BBB;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+/* line 284, ../scss/templateV7.scss */
+#topLevel a {
+  /* Align text vertical in the centre , colour and set height for hyperlink within in nav.
+  
+  Note 
+  Parent must have display set to table for this work.
+  */
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+  padding: 5px;
+}
+
+/* line 300, ../scss/templateV7.scss */
+#topLevel > li:hover > a {
+  background: #888;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
+}
+
+/* line 309, ../scss/templateV7.scss */
+#topLevel > li.current > a, #topLevel > li.current:hover > a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 321, ../scss/templateV7.scss */
+  #topLevel > li {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 730px) {
+  /* line 326, ../scss/templateV7.scss */
+  #topLevel > li {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 730px) {
+  /* line 333, ../scss/templateV7.scss */
+  #topLevel {
+    margin: 5px auto;
+  }
+
+  /* line 336, ../scss/templateV7.scss */
+  nav ul#topLevel {
+    margin: 5px auto;
+    display: none;
+  }
+  /* line 341, ../scss/templateV7.scss */
+  nav ul#topLevel li {
+    margin: 5px;
+  }
+  /* line 345, ../scss/templateV7.scss */
+  nav ul#topLevel li a {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  /* line 351, ../scss/templateV7.scss */
+  nav ul#topLevel.open {
+    display: block;
+  }
+}
+@media only screen and (min-width: 731px) {
+  /* line 359, ../scss/templateV7.scss */
+  #topLevel {
+    float: left;
+    display: block;
+  }
+
+  /* line 364, ../scss/templateV7.scss */
+  #topLevel > li {
+    margin: 0 5px;
+  }
+
+  /* line 367, ../scss/templateV7.scss */
+  #topLevel > li > a {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  /* line 373, ../scss/templateV7.scss */
+  #topLevel > li:hover > a,
+  #topLevel > li.current:hover > a {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  /* line 380, ../scss/templateV7.scss */
+  #topLevel {
+    float: left;
+    display: block;
+  }
+  /* line 385, ../scss/templateV7.scss */
+  #topLevel > li {
+    margin: 0 5px;
+  }
+  /* line 389, ../scss/templateV7.scss */
+  #topLevel > li > a {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  /* line 397, ../scss/templateV7.scss */
+  #topLevel li {
+    font-weight: normal;
+  }
+}
+/*
+========================================================================== 
+3c2. Sub Level Navigation
+========================================================================== 
+*/
+/* line 405, ../scss/templateV7.scss */
+li:hover > .subNav {
+  visibility: visible;
+  background: #888;
+  -webkit-box-shadow: -1px 1px 5px #888;
+  -moz-box-shadow: -1px 1px 5px #888;
+  box-shadow: -1px 1px 5px #888;
+}
+
+/* line 416, ../scss/templateV7.scss */
+.subNav {
+  display: none;
+  background-color: #65761f;
+  border: 0;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  letter-spacing: normal;
+  visibility: hidden;
+  position: absolute;
+  top: 99%;
+  left: -10px;
+  z-index: 598;
+  width: 100%;
+  margin: 0 5px;
+  padding: 0 5px;
+  font-size: 90%;
+}
+/* line 432, ../scss/templateV7.scss */
+.subNav li {
+  margin: 10px;
+}
+/* line 435, ../scss/templateV7.scss */
+.subNav li.current a, .subNav li.current:hover a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border: none;
+}
+/* line 445, ../scss/templateV7.scss */
+.subNav a {
+  color: #fff;
+  width: 140px;
+  border: 1px solid #000;
+  text-shadow: 1px 1px 1px #000;
+}
+/* line 452, ../scss/templateV7.scss */
+.subNav a:hover {
+  color: #000;
+  background: #BBB;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+@media only screen and (min-width: 731px) {
+  /* line 464, ../scss/templateV7.scss */
+  .subNav {
+    display: block;
+  }
+}
+/*
+========================================================================== 
+4. Main Content
+========================================================================== 
+*/
+/* line 474, ../scss/templateV7.scss */
+main {
+  margin: 10px 0;
+  float: left;
+  padding: 10px;
+}
+
+/* line 481, ../scss/templateV7.scss */
+main > header h2 {
+  font-size: 185%;
+}
+
+/* line 483, ../scss/templateV7.scss */
+main a[href]:hover {
+  color: #F30;
+}
+
+/* line 486, ../scss/templateV7.scss */
+header + article {
+  margin-top: 20px;
+}
+
+/* line 490, ../scss/templateV7.scss */
+article h1 {
+  font-size: 170%;
+}
+
+/* line 492, ../scss/templateV7.scss */
+article h2 {
+  font-size: 140%;
+}
+
+/* line 495, ../scss/templateV7.scss */
+article ul {
+  margin-left: 1.12em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+}
+
+/* line 502, ../scss/templateV7.scss */
+article li {
+  padding-bottom: 8px;
+}
+
+/** Note **/
+/* line 507, ../scss/templateV7.scss */
+.note {
+  font-family: 'Indie Flower', cursive;
+  position: relative;
+  /*lets us position the fold relative to the box*/
+  background: #288f2a;
+}
+/* line 513, ../scss/templateV7.scss */
+.note header {
+  font-weight: bold;
+  text-align: center;
+  background: #207622;
+  padding: 5px;
+  opacity: 0.7;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+/* line 527, ../scss/templateV7.scss */
+.noteBody {
+  padding: 20px 40px;
+}
+
+/** Fold corner ***/
+/* line 531, ../scss/templateV7.scss */
+.folded-rightbottom:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: #FFFFCC 40px solid;
+  border-top: #8c8a6c 40px solid;
+}
+
+/* line 541, ../scss/templateV7.scss */
+.shadow {
+  overflow: hidden;
+}
+/* line 544, ../scss/templateV7.scss */
+.shadow:after {
+  -webkit-box-shadow: -1px 1px 5px #212835;
+  -moz-box-shadow: -1px 1px 5px #212835;
+  box-shadow: -1px 1px 5px #212835;
+}
+
+/**** Table *********/
+/* line 557, ../scss/templateV7.scss */
+table thead {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background: #06F;
+}
+
+/* line 565, ../scss/templateV7.scss */
+table th, table td {
+  border: solid 2px #000;
+  padding: 5px;
+}
+
+/* line 573, ../scss/templateV7.scss */
+tr.evenRow {
+  background: #AAA;
+}
+/* line 575, ../scss/templateV7.scss */
+tr.oddRow {
+  background: #fff;
+}
+
+/* line 580, ../scss/templateV7.scss */
+tbody tr:hover {
+  background: #0399d4;
+  color: #fff;
+}
+
+/* line 586, ../scss/templateV7.scss */
+td ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* line 592, ../scss/templateV7.scss */
+caption {
+  caption-side: bottom;
+}
+
+/*** Images *****/
+/* Need sort out */
+/* line 603, ../scss/templateV7.scss */
+figure:before {
+  border: solid 1px #000;
+  font-weight: bold;
+  content: "?";
+  position: absolute;
+  top: 4%;
+  /*bottom:4%;*/
+  left: 4%;
+  background: rgba(255, 255, 255, 0.75);
+  /*color: black;*/
+  width: 24px;
+  height: 24px;
+  -moz-border-radius-topleft: 12px;
+  -webkit-border-top-left-radius: 12px;
+  border-top-left-radius: 12px;
+  -moz-border-radius-topright: 12px;
+  -webkit-border-top-right-radius: 12px;
+  border-top-right-radius: 12px;
+  -moz-border-radius-bottomleft: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  -moz-border-radius-bottomright: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  /* Only Fx 4 supporting transitions on psuedo elements so far... */
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  opacity: 0.75;
+  z-index: 5;
+}
+/* line 628, ../scss/templateV7.scss */
+figure:hover:before {
+  opacity: 0;
+}
+/* line 633, ../scss/templateV7.scss */
+figure > img {
+  margin: auto;
+  max-width: 96%;
+  display: inline-block;
+}
+/* line 640, ../scss/templateV7.scss */
+figure figcaption {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px 2.5%;
+  width: 96%;
+  opacity: 0;
+  top: 0;
+  /*bottom: 0; */
+  left: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  font-family: Verdana, Geneva, sans-serif;
+}
+/* line 656, ../scss/templateV7.scss */
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+
+/* line 664, ../scss/templateV7.scss */
+figcaption {
+  margin: auto;
+  text-align: center;
+}
+
+/* line 672, ../scss/templateV7.scss */
+figure {
+  position: relative;
+  margin: 20px 10px;
+  /*margin:5px;*/
+  border: 6px double #483C32;
+  box-shadow: 0 0 0 20px rgba(125, 135, 18, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.8) inset;
+  /*padding:5px;*/
+  padding: 1%;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 690, ../scss/templateV7.scss */
+figure.nojs figcaption {
+  max-width: 500px;
+}
+
+/* line 694, ../scss/templateV7.scss */
+.cap-top:hover figcaption {
+  /*bottom: 0;*/
+  top: 0;
+}
+/* line 695, ../scss/templateV7.scss */
+.cap-top figcaption {
+  top: -40%;
+  /*bottom: -40%;*/
+}
+
+/* line 705, ../scss/templateV7.scss */
+#subTopicNav a {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border: solid 1px #000;
+  background-color: #CCC;
+  color: #000;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #fff;
+}
+/* line 717, ../scss/templateV7.scss */
+#subTopicNav a[href]:hover {
+  background: #888;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
+}
+/* line 724, ../scss/templateV7.scss */
+#subTopicNav a.current, #subTopicNav.current:hover {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  background-color: transparent;
+  text-shadow: 1px 1px 1px #fff;
+  color: #000;
+  cursor: default;
+}
+
+/* line 737, ../scss/templateV7.scss */
+#bottom {
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 742, ../scss/templateV7.scss */
+  figure {
+    padding: 0;
+  }
+
+  /* line 744, ../scss/templateV7.scss */
+  figure > img {
+    margin: 5px 0;
+  }
+}
+@media only screen and (min-width: 731px) {
+  /* line 750, ../scss/templateV7.scss */
+  main {
+    width: 80%;
+  }
+
+  /* line 754, ../scss/templateV7.scss */
+  .note {
+    width: 50%;
+  }
+}
+/*
+========================================================================== 
+5. Sidebar / Adverts
+========================================================================== 
+*/
+/*
+========================================================================== 
+6.Page Footer
+========================================================================== 
+*/
+/* line 772, ../scss/templateV7.scss */
+#pageFooter {
+  margin-top: 10px;
+  padding: 10px;
+  clear: both;
+}
+
+/* line 780, ../scss/templateV7.scss */
+#pageFooterNav {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+/* line 788, ../scss/templateV7.scss */
+#pageFooterNav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 793, ../scss/templateV7.scss */
+#pageFooterNav li a.current {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+/* line 803, ../scss/templateV7.scss */
+#pageFooterNav a {
+  text-decoration: none;
+  border: solid 1px #000;
+  display: inline-block;
+  padding: 5px;
+  color: #000;
+  background-color: #CCC;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
+}
+/* line 816, ../scss/templateV7.scss */
+#pageFooterNav a:hover {
+  background-color: #333;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  /*text-decoration:underline;*/
+}
+
+/* line 827, ../scss/templateV7.scss */
+#copyright {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  border: 2px solid #999;
+  font-weight: bold;
+  font-size: 80%;
+}
