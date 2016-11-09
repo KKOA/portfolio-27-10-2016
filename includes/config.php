@@ -1,6 +1,4 @@
 <?php
-
-
 //Styles directory
 $styleFld = '/styles';
 
@@ -37,5 +35,6 @@ $supportFolder=$wifiWimaxLte.'support/';
 //Summary Directory
 $summaryFolder = $wifiWimaxLte.'summary/';
 
-
+//Quiz Directory
+$quizFolder = $wifiWimaxLte.'quiz/';
 
