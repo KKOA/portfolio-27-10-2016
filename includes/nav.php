@@ -86,5 +86,5 @@
     <li><a href="<?php echo $supportFolder; ?>abbreviations.php">Abbreviations</a></li>
     </ul>
   </li>
-  <li><a href="<?php echo $wifiWimaxLte ?>quiz.php">Quiz</a></li>
+  <li><a href="<?php echo $quizFolder ?>quiz.php">Quiz</a></li>
 </ul>
