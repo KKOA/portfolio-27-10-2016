@@ -88,6 +88,13 @@ video
 		transcriptWidth = transcriptWidth - ($('video').outerWidth());
 		$('.transcript').outerWidth(transcriptWidth -40);
 	});
+
+	$( window ).resize(function()
+	{
+		transcriptWidth = $('.videoContainer').innerWidth();
+		transcriptWidth = transcriptWidth - ($('video').outerWidth());
+		$('.transcript').outerWidth(transcriptWidth -40);
+	});
 </script>
 <script type="text/javascript" src="/scripts/customV3.js"></script>
 
@@ -159,27 +166,27 @@ video
 				<p>I have  broken these subjects into 5 Modules:</p>
 				<ul id="topics">
 					<li>
-						<a href="<?php echo $wifiWimaxLte; ?>digital-com/digital-com-topics.php" title="View Principles of Digital communications">
+						<a href="<?php echo $digtalFolder; ?>digital-com-topics.php" title="View Principles of Digital communications">
 							Principles of Digital communications
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo $wifiWimaxLte; ?>wifi/wifi-topics.php" title="Wi-Fi">
+						<a href="<?php echo $wifiFolder ?>wifi-topics.php" title="Wi-Fi">
 							Wi-Fi
 						</a>
 					</li>
 					<li>
-						<a href ="<?php echo $wifiWimaxLte; ?>wimax/wimax-topics.php" title="View WiMAX">
+						<a href ="<?php echo $wimaxFolder ?>wimax-topics.php" title="View WiMAX">
 							WiMAX
 						</a>
 					</li>
 					<li>
-						<a href ="<?php echo $wifiWimaxLte; ?>lte/lte-topics.php" title=" View LTE">
+						<a href ="<?php echo $lteFolder; ?>lte-topics.php" title=" View LTE">
 							Long-Term Evolution
 						</a>
 					</li>
 					<li>
-						<a href ="<?php echo $wifiWimaxLte; ?>summary/summary-topics.php" title="View Comparison">
+						<a href ="<?php echo $summaryFolder; ?>summary-topics.php" title="View Comparison">
 							Conclusion and Comparison
 						</a>
 					</li>
@@ -187,12 +194,12 @@ video
 				<p>If you are a  novice, I would recommend that you go through the subject matter in the aforementioned sequence.</p>
 				<p>If you are  an expert, you may proceed to the section you are interested in.</p>
 				<p>Not sure?  Why not try the
-					<a href="<?php echo $wifiWimaxLte; ?>quiz.php" title="View online quiz">
+					<a href="<?php echo $quizFolder; ?>quiz.php" title="View online quiz">
 						on-line quiz?
 					</a>
 				</p>
 				<p>I have also  published the project brief and
-					<a href="<?php echo $wifiWimaxLte; ?>summary/reports.php" title="View reports">
+					<a href="<?php echo $summaryFolder; ?>reports.php" title="View reports">
 						reports
 					</a>
 					on these subjects on-line. These came  together to make up my dissertation.</p>
@@ -203,7 +210,7 @@ video
 					for this.</p>
 				<p>Have fun  with the e-learning tool and learn a lot!</p>
 
-				<p><strong>Download video:</strong></p>
+				<p><strong>View flash alternative to the above of video <!--Download video:--></strong></p>
 				<p><a href="../video/WIFI-WiMAX-LTE/introduction.mp4">
 					MP4 format
 				</a>
@@ -223,7 +230,7 @@ video
 			//Add stick note styling
 		?>
 		<?php
-    		$note  =  '<p>Your browser must have the following :</p>';
+    		$note  = '<p>Your browser must have the following :</p>';
 			$note .='<ul><li> JavaScript enabled in the browser</li>';
 			$note .='<li>Flash installed and enabled in the browser</li></ul>';
 			$note .='<p>Without these feature you will be unable to interact with certain aspects of the pages.</p>';
